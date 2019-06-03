@@ -11,7 +11,6 @@
 
     <groupId>com.ydf</groupId>
     <artifactId>pay-web</artifactId>
-    <name>pay 模块主入口</name>
 
     <description>Demo project for Spring Boot</description>
 
@@ -63,6 +62,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

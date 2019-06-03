@@ -6,13 +6,12 @@
     <artifactId>pay-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>pay-core</module>
         <module>pay-alipay</module>
         <module>pay-wechat</module>
-        <module>pay-core</module>
+        <module>pay-web</module>
     </modules>
     <packaging>pom</packaging>
-
-    <name>SpringBoot 整合第三方支付系统Demo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,13 +35,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
